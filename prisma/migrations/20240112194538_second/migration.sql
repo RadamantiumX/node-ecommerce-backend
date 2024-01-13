@@ -1,5 +1,5 @@
 -- RedefineTables
-PRAGMA foreign_keys=OFF;
+PRAGMA foreign_keys = OFF;
 CREATE TABLE "new_Product" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "name" TEXT NOT NULL,

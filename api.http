@@ -2,16 +2,30 @@
 GET http://localhost:3000/api/products
 
 ### Obtener solo un producto
-GET http://localhost:3000/api/products/silla
+GET http://localhost:3000/api/products/Notebook
 
 #### Crear un nuevo producto
 POST http://localhost:3000/api/products
 Content-Type: application/json
 
 {
-    "name": "iphone",
-    "price": 10000,
-    "categoryId": 2,
-    "stock": 20
+    "name": "cama",
+    "price": 30000,
+    "categoryId": 3,
+    "stock": 2
     
 }
+
+### Borrar un producto
+DELETE http://localhost:3000/api/products/mesa
+
+### Actualizamos un producto
+PUT http://localhost:3000/api/products/cama
+Content-Type: application/json
+
+{
+    "stock": 10
+}
+
+### Ver las categorias 
+GET http://localhost:3000/api/categories
