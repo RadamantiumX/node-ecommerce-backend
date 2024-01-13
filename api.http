@@ -1,0 +1,17 @@
+#### ver todos los productos
+GET http://localhost:3000/api/products
+
+### Obtener solo un producto
+GET http://localhost:3000/api/products/silla
+
+#### Crear un nuevo producto
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "iphone",
+    "price": 10000,
+    "categoryId": 2,
+    "stock": 20
+    
+}
